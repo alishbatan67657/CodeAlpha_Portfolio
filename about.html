@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Alishba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Custom Styles for this exact page look -->
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 120px 20px 60px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--text-color);
+            margin-bottom: 25px;
+        }
+
+        .story-text {
+            font-size: 17px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .story-text strong {
+            color: var(--text-color);
+        }
+
+        .story-text .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Tags for Skills */
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 60px;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: rgba(217, 70, 239, 0.15);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Featured Projects Cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .project-card-mini {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .project-card-mini:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(217, 70, 239, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .project-icon {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .project-card-mini h3 {
+            font-size: 20px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .project-card-mini p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .arrow-icon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .project-card-mini:hover .arrow-icon {
+            color: var(--primary);
+        }
+
+        /* Let's Connect Section */
+        .connect-section {
+            background: linear-gradient(135deg, rgba(217, 70, 239, 0.1), rgba(139, 92, 246, 0.05));
+            border: 1px solid rgba(217, 70, 239, 0.2);
+            border-radius: 24px;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .connect-section h2 {
+            font-size: 28px;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .connect-section p {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-inline: auto;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">A</div>
+            <div class="logo-text">
+                <h1>Alishba</h1>
+                <p>Coding Journey</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" style="color: var(--text-color); font-weight: 600;">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main About Content -->
+    <div class="about-container">
+
+        <!-- Story Section -->
+        <div class="section-badge">
+            <span>✨</span> GET TO KNOW ME
+        </div>
+        <h1 class="section-title">My Story</h1>
+
+        <div class="story-text">
+            <p style="margin-bottom: 20px;">
+                I'm a student and aspiring web developer from Pakistan. My journey started with a simple curiosity about
+                how websites work — and slowly turned into a passion for creating them.
+            </p>
+            <p style="margin-bottom: 20px;">
+                Along the way, I've built complete websites using <span class="highlight">Next.js</span>, including my
+                personal portfolio and <span class="highlight">Subhan & Co</span>, a medical equipment company website.
+            </p>
+            <p>
+                I'm currently exploring advanced web development, learning AI and Python, and documenting what I learn
+                through my projects and blog.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section-badge" style="margin-top: 40px;">
+            <span>💻</span> CURRENTLY EXPLORING
+        </div>
+        <h2 class="section-title">Skills & Technologies</h2>
+
+        <div class="skills-tags">
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">AI / ML</span>
+        </div>
+
+        <!-- Featured Projects Section -->
+        <h2 class="section-title" style="font-size: 28px;">Featured Projects</h2>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <a href="projects.html" style="text-decoration: none;">
+                <div class="project-card-mini">
+                    <i class="fas fa-briefcase project-icon" style="color: #d97706;"></i>
+                    <i class="fas fa-arrow-up-right-from-square arrow-icon"></i>
+                    <h3>Alishba Portfolio</h3>
+                    <p>A modern personal portfolio built with Next.js, React and Tailwind CSS.</p>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="projects.html" style="text-decoration: none;">
+                <div class="project-card-mini">
+                    <i class="fas fa-building project-icon" style="color: #3b82f6;"></i>
+                    <i class="fas fa-arrow-up-right-from-square arrow-icon"></i>
+                    <h3>Subhan & Co</h3>
+                    <p>A professional medical equipment website designed with a modern responsive interface.</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Let's Connect Section -->
+        <div class="connect-section">
+            <h2>🚀 Let's Connect</h2>
+            <p>Want to see what I'm building or have a project idea? Check out my posts or get in touch.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="projects.html" class="btn primary-btn">Read My Posts <i class="fas fa-arrow-right"
+                        style="margin-left: 5px;"></i></a>
+                <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div style="margin-bottom: 15px; display: flex; justify-content: center; gap: 15px;">
+            <a href="https://www.linkedin.com/in/alishba-tanveer543" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lishayveer11" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lishayveer" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Alishba. All rights reserved. | CodeAlpha Frontend Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

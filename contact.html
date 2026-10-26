@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Alishba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">A</div>
+            <div class="logo-text">
+                <h1>Alishba</h1>
+                <p>Coding Journey</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" style="color: var(--text-color); font-weight: 600;">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="hero" style="min-height: 100vh; padding-top: 120px; align-items: flex-start;">
+        <div class="hero-content" style="max-width: 800px; text-align: center;">
+
+            <h1 class="main-title" style="font-size: 45px;">Get In <span>Touch</span></h1>
+            <p class="description" style="margin-bottom: 40px;">
+                Have a question or want to work together? Leave me a message!
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left;">
+
+                <!-- Contact Info (Left Side) -->
+                <div>
+                    <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--primary);">Contact Information</h3>
+
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p style="font-size: 13px; color: var(--text-muted);">Email</p>
+                            <p style="font-size: 15px;">alishbatanveer707@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div
+                            style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary);">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p style="font-size: 13px; color: var(--text-muted);">Location</p>
+                            <p style="font-size: 15px;">Lahore, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div style="margin-top: 40px;">
+                        <h4 style="font-size: 16px; margin-bottom: 15px;">Follow Me</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/alishba-tanveer543" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; transition: 0.3s;"
+                                onmouseover="this.style.background='var(--primary)'"
+                                onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/lishayveer11" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; transition: 0.3s;"
+                                onmouseover="this.style.background='var(--primary)'"
+                                onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <!-- TikTok -->
+                            <a href="https://www.tiktok.com/@lishayveer" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; text-decoration: none; transition: 0.3s;"
+                                onmouseover="this.style.background='var(--primary)'"
+                                onmouseout="this.style.background='rgba(255,255,255,0.1)'">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right Side) -->
+                <form style="display: flex; flex-direction: column; gap: 15px;">
+                    <div>
+                        <label
+                            style="font-size: 14px; color: var(--text-muted); display: block; margin-bottom: 5px;">Your
+                            Name</label>
+                        <input type="text" placeholder="Enter your name"
+                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--card-bg); color: white; outline: none; font-family: 'Inter', sans-serif;">
+                    </div>
+                    <div>
+                        <label
+                            style="font-size: 14px; color: var(--text-muted); display: block; margin-bottom: 5px;">Your
+                            Email</label>
+                        <input type="email" placeholder="Enter your email"
+                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--card-bg); color: white; outline: none; font-family: 'Inter', sans-serif;">
+                    </div>
+                    <div>
+                        <label
+                            style="font-size: 14px; color: var(--text-muted); display: block; margin-bottom: 5px;">Message</label>
+                        <textarea placeholder="Your message here..." rows="4"
+                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--card-bg); color: white; outline: none; font-family: 'Inter', sans-serif; resize: none;"></textarea>
+                    </div>
+                    <button type="button" class="btn primary-btn"
+                        style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Send Message</button>
+                </form>
+
+            </div>
+
+            <div class="hero-btns" style="margin-top: 50px; justify-content: center;">
+                <a href="index.html" class="btn secondary-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div style="margin-bottom: 15px; display: flex; justify-content: center; gap: 15px;">
+            <a href="https://www.linkedin.com/in/alishba-tanveer543" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lishayveer11" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lishayveer" target="_blank"
+                style="color: var(--text-muted); font-size: 20px;"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2025 Alishba. All rights reserved. | CodeAlpha Frontend Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
